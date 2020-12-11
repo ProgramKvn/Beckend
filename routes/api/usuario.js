@@ -2,7 +2,7 @@ const express = require('express');
 const autenticación = require('../../config/autenticación');
 const router = express.Router();
 const Usuario = require('../../models/Usuario');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 //La siguiente configuración responderá a la petición POST correspondiente al registro
 router.post('/registro', async (req, res) => {
