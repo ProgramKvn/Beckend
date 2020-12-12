@@ -15,7 +15,7 @@ const topics = new Schema({
   },
   categories: {
     type: String,
-  },
+  }, 
 });
 
 const topic = new model("Topics", topics);

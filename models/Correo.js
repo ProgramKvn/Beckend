@@ -10,7 +10,7 @@ const correoSchema = new Schema({
     Autor: {
         type: String
     },
-    Correo_Autor:{
+    Correo_Autor:{ 
         type: String
     },
     Nombre_Completo:{

@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 //Creando la estructura de la colección
 const usuarioSchema = Schema({
-    Nombre_Usuario:{
+    Nombre_Usuario: {
         type: String,
         required: true
     },
@@ -19,6 +19,10 @@ const usuarioSchema = Schema({
     Contraseña: {
         type: String,
         required: true
+    },
+    Rol: {
+        type: String,
+        default: 'Alumno'
     },
     tokens: [
         {

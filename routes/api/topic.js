@@ -7,7 +7,7 @@ const Topics = require("../../models/topics");
 //@routers GET api/topics
 //@desc  Get all TOPIC
 router.get("/", async (req, res) => {
-  try {
+  try { 
     const topics = await Topics.find();
     if (!topics) throw Error("No items");
     res.status(200).json(topics);

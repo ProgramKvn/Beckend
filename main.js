@@ -30,4 +30,7 @@ app.use('/api/usuario', usuarioRoutes);
 const correoRoutes = require('./routes/api/correo');
 app.use('/api/correo', correoRoutes);
 
+const cursosRoutes = require('./routes/api/crear_curso');
+app.use('/api/curso', cursosRoutes);
+
 app.listen(PORT, () => console.log('El Servidor está activo en el puerto: ', PORT))
